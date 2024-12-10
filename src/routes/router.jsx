@@ -4,6 +4,8 @@ import Home from "../layouts/Home";
 import ErrorPage from "../layouts/ErrorPage";
 import Login from "../layouts/Login";
 import Register from "../layouts/Register";
+import AddNewCampaign from "../layouts/AddNewCampaign";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/addCampaign",
+        element: (
+          <PrivateRoute>
+            <AddNewCampaign />
+          </PrivateRoute>
+        ),
       },
     ],
   },

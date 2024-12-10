@@ -1,9 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Register = () => {
   const { createUser, updateUser } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -16,14 +18,22 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
-        updateUser(updateInfo);
+        toast.success("Registration Successful");
+        updateUser(updateInfo)
+          .then(() => {
+            navigate("/");
+          })
+          .catch((error) => {
+            toast.error(error.code);
+          });
       })
       .catch((error) => {
-        console.log(error.message);
+        toast.error(error.code);
       });
   };
   return (
     <div className="flex justify-center items-center h-screen">
+      <Toaster />
       <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl">
         <h1 className="text-4xl font-bold py-8 text-center">Register</h1>
         <form onSubmit={handleRegister} className="card-body">

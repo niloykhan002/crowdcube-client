@@ -24,7 +24,7 @@ const Banner = () => {
             </p>
             <div className="space-x-6">
               <button className="btn w-40 font-semibold">Donate</button>
-              <button className="btn w-40 font-semibold">Campaign</button>
+              <button className="btn w-40 font-semibold">Add Campaign</button>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Banner = () => {
             </p>
             <div className="space-x-6">
               <button className="btn w-40 font-semibold">Donate</button>
-              <button className="btn w-40 font-semibold">Campaign</button>
+              <button className="btn w-40 font-semibold">Add Campaign</button>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Banner = () => {
             </p>
             <div className="space-x-6">
               <button className="btn w-40 font-semibold">Donate</button>
-              <button className="btn w-40 font-semibold">Campaign</button>
+              <button className="btn w-40 font-semibold">Add Campaign</button>
             </div>
           </div>
         </div>
