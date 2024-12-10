@@ -16,15 +16,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-6 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-white text-4xl font-bold">
+            <h2 className="text-white text-xl md:text-4xl font-bold">
               Fuel Your Dreams, Join Our Journey!
             </h2>
-            <p className="text-white text-xl font-semibold">
+            <p className="text-white md:text-xl font-semibold">
               Get Started Today
             </p>
             <div className="space-x-6">
-              <button className="btn w-40 font-semibold">Donate</button>
-              <button className="btn w-40 font-semibold">Add Campaign</button>
+              <button className="btn md:w-40 font-semibold">Donate</button>
+              <button className="btn md:w-40 font-semibold">
+                Add Campaign
+              </button>
             </div>
           </div>
         </div>
@@ -39,15 +41,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-6 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-white text-4xl font-bold">
+            <h2 className="text-white text-xl md:text-4xl font-bold">
               Small Steps, Big Differences!
             </h2>
-            <p className="text-white text-xl font-semibold">
+            <p className="text-white md:text-xl font-semibold">
               Get Started Today
             </p>
             <div className="space-x-6">
-              <button className="btn w-40 font-semibold">Donate</button>
-              <button className="btn w-40 font-semibold">Add Campaign</button>
+              <button className="btn md:w-40 font-semibold">Donate</button>
+              <button className="btn md:w-40 font-semibold">
+                Add Campaign
+              </button>
             </div>
           </div>
         </div>
@@ -62,15 +66,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-6 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-white text-4xl font-bold">
+            <h2 className="text-white text-xl md:text-4xl font-bold">
               Together, We Make Change Possible!
             </h2>
-            <p className="text-white text-xl font-semibold">
+            <p className="text-white md:text-xl font-semibold">
               Get Started Today
             </p>
             <div className="space-x-6">
-              <button className="btn w-40 font-semibold">Donate</button>
-              <button className="btn w-40 font-semibold">Add Campaign</button>
+              <button className="btn md:w-40 font-semibold">Donate</button>
+              <button className="btn md:w-40 font-semibold">
+                Add Campaign
+              </button>
             </div>
           </div>
         </div>
