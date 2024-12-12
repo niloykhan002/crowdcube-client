@@ -9,7 +9,6 @@ const CampaignDetails = () => {
   delete campaign._id;
   campaign.userName = user.displayName;
   campaign.userEmail = user.email;
-  console.log(campaign);
 
   const handleDonate = () => {
     fetch("http://localhost:5000/donation", {
@@ -47,6 +46,9 @@ const CampaignDetails = () => {
           </p>
           <p>
             <span className="font-bold">Min Amount:</span> {campaign.amount}
+          </p>
+          <p>
+            <span className="font-bold">Added By:</span> {campaign.name}
           </p>
           <div>
             <button onClick={handleDonate} className="btn btn-neutral">
