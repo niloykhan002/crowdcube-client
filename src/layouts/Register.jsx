@@ -14,6 +14,15 @@ const Register = () => {
     const photoURL = form.photo.value;
     const password = form.password.value;
     const updateInfo = { displayName: name, photoURL: photoURL };
+    if (password.length < 6) {
+      return toast.error("Length must be at least 6 character ");
+    }
+    if (!/[A-Z]/.test(password)) {
+      return toast.error("Must have an Uppercase letter in the password");
+    }
+    if (!/[a-z]/.test(password)) {
+      return toast.error("Must have a Lowercase letter in the password");
+    }
 
     createUser(email, password)
       .then((result) => {

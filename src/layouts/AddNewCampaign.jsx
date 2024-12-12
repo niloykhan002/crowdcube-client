@@ -11,7 +11,8 @@ const AddNewCampaign = () => {
     const title = form.title.value;
     const campaignType = form.campaignType.value;
     const description = form.description.value;
-    const amount = form.amount.value;
+    const amountStr = form.amount.value;
+    const amount = parseInt(amountStr);
     const deadline = form.deadline.value;
     const email = form.email.value;
     const name = form.name.value;

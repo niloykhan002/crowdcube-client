@@ -4,6 +4,9 @@ const AllCampaigns = () => {
   const campaigns = useLoaderData();
   return (
     <div className="my-12">
+      <div className="py-4 px-4 border rounded-xl my-6 flex justify-end ">
+        <button className="btn btn-neutral w-24">Sort By</button>
+      </div>
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
@@ -12,7 +15,7 @@ const AllCampaigns = () => {
               <th></th>
               <th>Name</th>
               <th>Campaign Type</th>
-              <th>Deadline</th>
+              <th>Donation Amount</th>
               <th></th>
             </tr>
           </thead>
@@ -34,7 +37,7 @@ const AllCampaigns = () => {
                   </div>
                 </td>
                 <td>{campaign.campaignType}</td>
-                <td>{campaign.deadline}</td>
+                <td>{campaign.amount}$</td>
                 <th>
                   <Link
                     to={`/campaign/${campaign._id}`}

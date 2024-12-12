@@ -1,8 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 import DonateCard from "../components/DonateCard";
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 const MyDonations = () => {
-  const donatedData = useLoaderData();
+  const { user } = useContext(AuthContext);
+  const donatedAllData = useLoaderData();
+  const donatedData = donatedAllData.filter(
+    (data) => data.userEmail === user.email
+  );
   return (
     <div className="my-12">
       <h2 className="text-center text-4xl font-bold">My Donations</h2>
