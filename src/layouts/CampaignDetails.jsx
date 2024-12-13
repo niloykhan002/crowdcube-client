@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
+import moment from "moment";
+import Swal from "sweetalert2";
 
 const CampaignDetails = () => {
   const { user } = useContext(AuthContext);
@@ -9,8 +11,19 @@ const CampaignDetails = () => {
   delete campaign._id;
   campaign.userName = user.displayName;
   campaign.userEmail = user.email;
+  const { deadline } = campaign;
+  const currentDate = moment().format("YYYY-MM-DD");
+  const deadlineOver = moment(deadline).isBefore(currentDate);
 
   const handleDonate = () => {
+    if (deadlineOver) {
+      return Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Deadline is over",
+        footer: '<a href="#">Donate another one</a>',
+      });
+    }
     fetch("http://localhost:5000/donation", {
       method: "POST",
       headers: {

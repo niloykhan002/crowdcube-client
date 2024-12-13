@@ -1,11 +1,23 @@
+import { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
 const AllCampaigns = () => {
-  const campaigns = useLoaderData();
+  const LoadedCampaigns = useLoaderData();
+  const [campaigns, setCampaigns] = useState(LoadedCampaigns);
+
+  const handleSort = () => {
+    fetch("http://localhost:5000/campaigns-sort")
+      .then((res) => res.json())
+      .then((data) => {
+        setCampaigns(data);
+      });
+  };
   return (
     <div className="my-12">
       <div className="py-4 px-4 border rounded-xl my-6 flex justify-end ">
-        <button className="btn btn-neutral w-24">Sort By</button>
+        <button onClick={handleSort} className="btn btn-neutral w-24">
+          Sort By
+        </button>
       </div>
       <div className="overflow-x-auto">
         <table className="table">

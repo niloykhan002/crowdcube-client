@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner1 from "../assets/image01.jpg";
 import banner2 from "../assets/image02.jpg";
 import banner3 from "../assets/image03.webp";
@@ -23,10 +24,12 @@ const Banner = () => {
               Get Started Today
             </p>
             <div className="space-x-6">
-              <button className="btn md:w-40 font-semibold">Donate</button>
-              <button className="btn md:w-40 font-semibold">
+              <Link to={"/campaigns"} className="btn md:w-40 font-semibold">
+                Donate
+              </Link>
+              <Link to={"/addCampaign"} className="btn md:w-40 font-semibold">
                 Add Campaign
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -48,10 +51,12 @@ const Banner = () => {
               Get Started Today
             </p>
             <div className="space-x-6">
-              <button className="btn md:w-40 font-semibold">Donate</button>
-              <button className="btn md:w-40 font-semibold">
+              <Link to={"/campaigns"} className="btn md:w-40 font-semibold">
+                Donate
+              </Link>
+              <Link to={"/addCampaign"} className="btn md:w-40 font-semibold">
                 Add Campaign
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -73,10 +78,12 @@ const Banner = () => {
               Get Started Today
             </p>
             <div className="space-x-6">
-              <button className="btn md:w-40 font-semibold">Donate</button>
-              <button className="btn md:w-40 font-semibold">
+              <Link to={"/campaigns"} className="btn md:w-40 font-semibold">
+                Donate
+              </Link>
+              <Link to={"/addCampaign"} className="btn md:w-40 font-semibold">
                 Add Campaign
-              </button>
+              </Link>
             </div>
           </div>
         </div>

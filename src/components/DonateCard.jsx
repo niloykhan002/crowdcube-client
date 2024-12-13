@@ -12,7 +12,7 @@ const DonateCard = ({ data }) => {
             {data.title}
             <div className="badge badge-secondary">NEW</div>
           </h2>
-          <p>{data.description}</p>
+          <p>{data.description.slice(0, 150)}...</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">{data.campaignType}</div>
             <div className="badge badge-outline">{data.deadline}</div>
