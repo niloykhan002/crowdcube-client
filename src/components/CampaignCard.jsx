@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
 
 const CampaignCard = ({ campaign }) => {
   return (
@@ -22,9 +23,17 @@ const CampaignCard = ({ campaign }) => {
           </p>
           <p>{campaign.description.slice(0, 100)}...</p>
           <div className="card-actions justify-end">
-            <Link to={`/campaign/${campaign._id}`} className="btn btn-neutral">
+            <Link
+              id="details-id"
+              to={`/campaign/${campaign._id}`}
+              className="btn btn-neutral"
+            >
               See More
             </Link>
+            <Tooltip
+              anchorSelect="#details-id"
+              content="Click to see details"
+            />
           </div>
         </div>
       </div>
