@@ -1,8 +1,16 @@
-# React + Vite
+# Crowdcube
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We’re a personal crowdfunding website where you can raise money for anything that matters to you. From personal causes and projects to events and more.
+As one of the first personal crowdfunding websites, our experience, support, and features will help ensure you raise the most money possible.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsiveness
+- Dark Mode
+- React Routing
+- Private Route
+- Firebase Authentication
+
+## Live Site
+
+- https://crowdcube-8aca5.web.app/
