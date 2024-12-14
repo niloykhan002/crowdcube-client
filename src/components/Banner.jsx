@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import banner1 from "../assets/image01.jpg";
 import banner2 from "../assets/image02.jpg";
 import banner3 from "../assets/image03.webp";
+import { Typewriter } from "react-simple-typewriter";
 const Banner = () => {
   return (
     <div className="my-12">
@@ -17,9 +18,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-6 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-white text-xl md:text-4xl font-bold">
-              Fuel Your Dreams, Join Our Journey!
-            </h2>
+            <div className="text-white text-xl md:text-4xl font-bold">
+              <Typewriter
+                words={["Fuel Your Dreams, Join Our Journey!"]}
+                loop={false}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </div>
             <p className="text-white md:text-xl font-semibold">
               Get Started Today
             </p>
@@ -44,9 +53,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-6 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-white text-xl md:text-4xl font-bold">
-              Small Steps, Big Differences!
-            </h2>
+            <div className="text-white text-xl md:text-4xl font-bold">
+              <Typewriter
+                words={["Small Steps, Big Differences!"]}
+                loop={false}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </div>
             <p className="text-white md:text-xl font-semibold">
               Get Started Today
             </p>
@@ -71,9 +88,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="absolute flex flex-col gap-6 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-white text-xl md:text-4xl font-bold">
-              Together, We Make Change Possible!
-            </h2>
+            <div className="text-white text-xl md:text-4xl font-bold">
+              <Typewriter
+                words={["Together, We Make Change Possible!"]}
+                loop={false}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </div>
             <p className="text-white md:text-xl font-semibold">
               Get Started Today
             </p>
