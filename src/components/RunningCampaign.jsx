@@ -4,7 +4,7 @@ import CampaignCard from "./CampaignCard";
 const RunningCampaign = () => {
   const [campaigns, setCampaigns] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/campaigns-limit")
+    fetch("https://crowdcube-server-chi.vercel.app/campaigns-limit")
       .then((res) => res.json())
       .then((data) => {
         setCampaigns(data);

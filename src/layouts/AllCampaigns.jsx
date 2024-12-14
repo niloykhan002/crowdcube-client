@@ -6,7 +6,7 @@ const AllCampaigns = () => {
   const [campaigns, setCampaigns] = useState(LoadedCampaigns);
 
   const handleSort = () => {
-    fetch("http://localhost:5000/campaigns-sort")
+    fetch("https://crowdcube-server-chi.vercel.app/campaigns-sort")
       .then((res) => res.json())
       .then((data) => {
         setCampaigns(data);

@@ -24,7 +24,7 @@ const CampaignDetails = () => {
         footer: '<a href="#">Donate another one</a>',
       });
     }
-    fetch("http://localhost:5000/donation", {
+    fetch("https://crowdcube-server-chi.vercel.app/donation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
