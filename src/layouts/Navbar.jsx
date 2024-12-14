@@ -1,10 +1,11 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { Tooltip } from "react-tooltip";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [theme, setTheme] = useState("light");
   const link = (
     <>
       <li>
@@ -27,6 +28,16 @@ const Navbar = () => {
   const handleSignOut = () => {
     logOut();
   };
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    document.querySelector("html").setAttribute("data-theme", theme);
+  }, [theme]);
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -85,6 +96,12 @@ const Navbar = () => {
             </Link>
           </div>
         )}
+        <input
+          type="checkbox"
+          className="toggle ml-3"
+          id="toggle"
+          onChange={handleToggle}
+        />
       </div>
     </div>
   );

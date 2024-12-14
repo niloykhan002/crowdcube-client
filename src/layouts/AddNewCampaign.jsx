@@ -27,7 +27,6 @@ const AddNewCampaign = () => {
       email,
       name,
     };
-    console.log(campaign);
     fetch("http://localhost:5000/campaigns", {
       method: "POST",
       headers: {

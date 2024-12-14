@@ -10,7 +10,6 @@ const RunningCampaign = () => {
         setCampaigns(data);
       });
   }, []);
-  console.log(campaigns);
   return (
     <div className="my-12">
       <h1 className="text-4xl font-bold text-center">Running Campaigns</h1>

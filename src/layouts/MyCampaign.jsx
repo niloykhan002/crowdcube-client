@@ -75,7 +75,7 @@ const MyCampaign = () => {
                 </td>
                 <td>{campaign.campaignType}</td>
                 <td>{campaign.deadline}</td>
-                <th className="space-x-5">
+                <th className="flex gap-4">
                   <Link
                     to={`/updateCampaign/${campaign._id}`}
                     className="btn btn-neutral btn-xs"

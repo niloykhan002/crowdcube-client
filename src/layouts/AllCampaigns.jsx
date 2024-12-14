@@ -16,7 +16,7 @@ const AllCampaigns = () => {
     <div className="my-12">
       <div className="py-4 px-4 border rounded-xl my-6 flex justify-end ">
         <button onClick={handleSort} className="btn btn-neutral w-24">
-          Sort By
+          Sort
         </button>
       </div>
       <div className="overflow-x-auto">
@@ -53,7 +53,7 @@ const AllCampaigns = () => {
                 <th>
                   <Link
                     to={`/campaign/${campaign._id}`}
-                    className="btn btn-neutral btn-xs"
+                    className="btn btn-neutral btn-xs h-7 "
                   >
                     See More
                   </Link>
