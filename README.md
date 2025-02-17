@@ -30,21 +30,28 @@ As one of the earliest personal crowdfunding platforms, our experience, features
 - 🎯 **Easy Campaign Creation** – Simple steps to launch a fundraiser.
 - 💰 **Donation Tracking** – Monitor funds in real-time.
 
-## Demo
+## 📥 Installation  
 
-🚀 [Live Demo](https://yourwebsite.com) *(Replace with actual link)*
+### Prerequisites  
+- Node.js and npm installed  
+- MongoDB running (local or cloud-based)  
+- Firebase project setup (for authentication)  
 
-## Installation
+### Steps  
 
-To set up the project locally, follow these steps:
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/niloykhan002/crowdcube-client.git
+   cd study-circle
+   ```
 
-1. Clone the repository:
-   
-   git clone https://github.com/your-username/your-repo.git
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```
 
-2. Navigate to the project folder:
-   cd your-repo
-
-3. Install dependencies:
-    npm install
+3. **Run the project**  
+   ```bash
+   npm start
+   ```
 
